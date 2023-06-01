@@ -1,0 +1,6 @@
+<%= turbo_frame_tag "view_email" do %>
+  <p><%= @email.body %></p>
+  <div>
+    <%= button_to "Supprimer", email_path(@email), method: :delete, data: { turbo_frame: "new_email" }, class: "btn btn-danger" %>
+  </div>
+<% end %>

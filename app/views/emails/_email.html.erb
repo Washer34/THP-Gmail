@@ -1,0 +1,4 @@
+<tr>
+  <td class="<%= email.read ? '' : 'font-weight-bold text-danger' %> <%= email.read ? 'text-white' : '' %>"> <%= email.object %></td>
+  <td><%= link_to "Voir le contenu", email_path(email), data: { turbo_frame: "view_email" } %></td>
+</tr>
